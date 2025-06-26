@@ -1,0 +1,11 @@
+name: noise2vst
+channels:
+  - anaconda
+  - pytorch
+  - conda-forge
+dependencies:
+  - numpy=1.26.4
+  - jupyter
+  - torchvision=0.17
+  - matplotlib=3.9
+  

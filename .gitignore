@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+*.env
+*.venv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter Notebook metadata and outputs
+*.nbconvert.ipynb
+
+# Weights of neural networks
+*.pth
+
+# Local configuration files
+*.config
+*.ini
+*.toml
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Cache and temporary files
+.cache/
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Package management
+pip-log.txt
+pip-delete-this-directory.txt
+
+dist/
+build/
+*.egg-info/
+
+tests/__pycache__/
+
+# VSCode and other IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Conda environments
+*.conda
+
+# Docker
+*.dockerignore
+
+# Miscellaneous
+.ipynb_checkpoints/
+__pycache__/
