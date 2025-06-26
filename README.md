@@ -1,4 +1,4 @@
-# Self-Calibrated Variance-Stabilizing Transformations for Real-World Image Denoising 
+# Self-Calibrated Variance-Stabilizing Transformations for Real-World Image Denoising (accepted at ICCV'25)
 Sébastien Herbreteau and Michael Unser
 
 ## Requirements
