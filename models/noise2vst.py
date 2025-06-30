@@ -34,7 +34,7 @@ def augmentation(x, k=0, inverse=False):
         k = [0, 1, 6, 3, 4, 5, 2, 7][k]
     if k % 2 == 1:
         x = torch.flip(x, dims=[-1])
-    return torch.rot90(x, k=(k//2) % 4, dims=[-2, -1])
+    return torch.rot90(x, k=k//2, dims=[-2, -1])
 
 class Donut3x3(nn.Module):
     """
