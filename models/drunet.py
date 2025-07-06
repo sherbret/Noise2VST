@@ -10,9 +10,9 @@ import torch.nn.functional as F
 class ResBlock(nn.Module):
     def __init__(self, in_channels=64, out_channels=64):
         super().__init__()
-        self.res = nn.Sequential(nn.Conv2d(in_channels, out_channels, 3, stride=1, padding=1, bias=False, padding_mode='zeros'),
+        self.res = nn.Sequential(nn.Conv2d(in_channels, out_channels, 3, padding=1, bias=False),
                                 nn.ReLU(inplace=True),
-                                nn.Conv2d(in_channels, out_channels, 3, stride=1, padding=1, bias=False, padding_mode='zeros'))
+                                nn.Conv2d(in_channels, out_channels, 3, padding=1, bias=False))
         
     def forward(self, x):
         return x + self.res(x)
@@ -22,8 +22,8 @@ class DRUNet(nn.Module):
         super().__init__()
         in_nc = 3 if color else 1
         out_nc = in_nc
-        nc=[64, 128, 256, 512]
-        nb=4
+        nc = [64, 128, 256, 512]
+        nb = 4
 
         self.m_head = nn.Conv2d(in_nc+1, nc[0], 3, stride=1, padding=1, bias=False)
         
