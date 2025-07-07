@@ -15,15 +15,13 @@ class FFDNet(nn.Module):
         else:
             channels_in, channels_out, num_of_layers, features = 5, 4, 15, 64
 
-        kernel_size = 3
-        padding = 1
         layers = []
-        layers.append(nn.Conv2d(in_channels=channels_in, out_channels=features, kernel_size=kernel_size, padding=padding, bias=True))
+        layers.append(nn.Conv2d(channels_in, features, 3, padding=1))
         layers.append(nn.ReLU(inplace=True))
         for _ in range(num_of_layers - 2):
-            layers.append(nn.Conv2d(in_channels=features, out_channels=features, kernel_size=kernel_size, padding=padding, bias=True))
+            layers.append(nn.Conv2d(features, features, 3, padding=1))
             layers.append(nn.ReLU(inplace=True))
-        layers.append(nn.Conv2d(in_channels=features, out_channels=channels_out, kernel_size=kernel_size, padding=padding, bias=True))
+        layers.append(nn.Conv2d(features, channels_out, 3, padding=1))
         self.model = nn.Sequential(*layers)
 
     def forward(self, x, sigma=25/255, norm_equiv=True):
