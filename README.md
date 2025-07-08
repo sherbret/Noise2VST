@@ -55,6 +55,8 @@ with torch.no_grad():
 
 We acknowledge access to the facilities and expertise of the CIBM Center for Biomedical Imaging, a Swiss research center of excellence founded and supported by Lausanne University Hospital (CHUV), University of Lausanne (UNIL), École polytechnique fédérale de Lausanne (EPFL), University of Geneva (UNIGE), and Geneva University Hospitals (HUG).
 
+This work was granted access to the HPC resources of IDRIS under the allocation 2024-AD011015932 made by GENCI.
+
 ## Citation
 ```BibTex
 @article{herbreteau2024noise2vst,
