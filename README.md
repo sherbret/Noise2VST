@@ -25,9 +25,9 @@ conda activate noise2vst
 
 ## Pre-trained models
 
-We use two popular off-the-shelf neural networks specialized in the removal of Gaussian noise (see folder [`models`](models/)):
-* FFDNet [K. Zhang et al., IEEE Trans IP 2018]
-* DRUNet [K. Zhang et al., IEEE Trans PAMI 2022]
+We use two popular off-the-shelf neural networks specialized in the removal of **Gaussian noise** (see folder [`models`](models/)):
+* **FFDNet** [K. Zhang et al., IEEE Trans IP 2018]
+* **DRUNet** [K. Zhang et al., IEEE Trans PAMI 2022]
 
 Their pre-trained weights can be downloaded using the file [`download.py`](pretrained_weights/download.py).
 
