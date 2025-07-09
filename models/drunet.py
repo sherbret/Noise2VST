@@ -29,33 +29,33 @@ class DRUNet(nn.Module):
         
         self.m_down1 = nn.Sequential(
             *[ResBlock(nc[0], nc[0]) for _ in range(nb)],
-            nn.Conv2d(nc[0], nc[1], kernel_size=2, stride=2, bias=False),
+            nn.Conv2d(nc[0], nc[1], 2, stride=2, bias=False),
             )
         
         self.m_down2 = nn.Sequential(
             *[ResBlock(nc[1], nc[1]) for _ in range(nb)],
-            nn.Conv2d(nc[1], nc[2], kernel_size=2, stride=2, bias=False),
+            nn.Conv2d(nc[1], nc[2], 2, stride=2, bias=False),
             )
         
         self.m_down3 = nn.Sequential(
             *[ResBlock(nc[2], nc[2]) for _ in range(nb)],
-            nn.Conv2d(nc[2], nc[3], kernel_size=2, stride=2, bias=False),
+            nn.Conv2d(nc[2], nc[3], 2, stride=2, bias=False),
             )
         
         self.m_body = nn.Sequential(*[ResBlock(nc[3], nc[3]) for _ in range(nb)])
         
         self.m_up3 = nn.Sequential(
-            nn.ConvTranspose2d(nc[3], nc[2], kernel_size=2, stride=2, bias=False),
+            nn.ConvTranspose2d(nc[3], nc[2], 2, stride=2, bias=False),
             *[ResBlock(nc[2], nc[2]) for _ in range(nb)] 
             )
         
         self.m_up2 = nn.Sequential(
-            nn.ConvTranspose2d(nc[2], nc[1], kernel_size=2, stride=2, bias=False),
+            nn.ConvTranspose2d(nc[2], nc[1], 2, stride=2, bias=False),
             *[ResBlock(nc[1], nc[1]) for _ in range(nb)] 
             )
         
         self.m_up1 = nn.Sequential(
-            nn.ConvTranspose2d(nc[1], nc[0], kernel_size=2, stride=2, bias=False),
+            nn.ConvTranspose2d(nc[1], nc[0], 2, stride=2, bias=False),
             *[ResBlock(nc[0], nc[0]) for _ in range(nb)]
             )
         
