@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Noise2VST"
+version = "0.1.0"
+description = "Noise2VST denoising microscopy images"
+authors = [
+  { name = "Sébastien Herbret" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+
+[tool.setuptools]
+
+include-package-data = true
+
+[tool.setuptools.packages.find]
+
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml"]
+
+[tool.setuptools_scm]
+write_to = "src/noise2vst/_version.py"
+fallback_version = "0.0.1+nogit"
