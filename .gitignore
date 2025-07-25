@@ -22,6 +22,7 @@ venv/
 *.config
 *.ini
 *.toml
+!pyproject.toml
 
 # Logs and databases
 *.log

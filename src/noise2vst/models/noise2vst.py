@@ -244,7 +244,7 @@ class Noise2VST(nn.Module):
         if not self.inverse:
             self.spline2 = Spline(nb_knots, 0, 1)
 
-    def fit(self, z, denoiser, nb_iterations=2000, patch_size=64, batch_size=4, stride=4, lr=1e-2):
+    def fit(self, z, denoiser, nb_iterations=2000, patch_size=64, batch_size=4, stride=4, lr=1e-2, progress_callback = None):
         # Normalization between 0 and 1
         z_min, z_max = z.min(), z.max()
         lam = (z_max - z_min) if z_max > z_min else 1
@@ -284,6 +284,8 @@ class Noise2VST(nn.Module):
             loss.backward()
             optimizer.step()
             scheduler.step()
+            if progress_callback is not None:
+                progress_callback(k / nb_iterations * 100)
 
     def forward(self, z, denoiser):
         z_min, z_max = z.min(), z.max()
