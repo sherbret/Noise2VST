@@ -285,7 +285,7 @@ class Noise2VST(nn.Module):
             optimizer.step()
             scheduler.step()
             if progress_callback is not None:
-                progress_callback(k / nb_iterations * 100)
+                progress_callback(float(k) / nb_iterations * 100)
 
     def forward(self, z, denoiser):
         z_min, z_max = z.min(), z.max()
