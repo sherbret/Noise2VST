@@ -3,7 +3,9 @@ Sébastien Herbreteau and Michael Unser
 
 ## News
 
-- Accepted at ICCV'25 :fire:
+- :fire: Accepted at ICCV'25 
+
+- :fire: The Napari plugin is out. Thanks to Ibrahima Alain Gueye (intern ENSAI)!
 
 ## Requirements
 
