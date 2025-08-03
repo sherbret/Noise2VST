@@ -10,7 +10,7 @@ authors = [
   { name = "Sébastien Herbreteau", email = "sebastien.herbreteau@ensai.fr" }
 ]
 maintainers = [
-  { name = Ibrahima Alain Gueye, email = "gueyeibrahimaalain@gmail.com" }
+  { name = "Ibrahima Alain Gueye", email = "gueyeibrahimaalain@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
