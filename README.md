@@ -5,11 +5,11 @@ Sébastien Herbreteau and Michael Unser
 
 - :fire: Accepted at ICCV'25 
 
-- :fire: The Napari plugin is out! 👉 Check out the [plugin here](https://github.com/IbrahimaAlain/napari-noise2vst). Thanks to Ibrahima Alain Gueye (intern ENSAI)! 
+- :fire: The Napari plugin is out! 👉 Check it out [here](https://github.com/IbrahimaAlain/napari-noise2vst). Thanks to Ibrahima Alain Gueye (intern ENSAI)! 
 
 ## Napari plugin
 
-Thanks to Ibrahima Alain Gueye (intern ENSAI) for developing the plugin for Napari. 👉 Check out the [plugin here](https://github.com/IbrahimaAlain/napari-noise2vst).
+Thanks to Ibrahima Alain Gueye (intern ENSAI) for developing the plugin for Napari. 👉 Check it out [here](https://github.com/IbrahimaAlain/napari-noise2vst).
 
 ## Requirements
 
@@ -20,14 +20,15 @@ Here is the list of libraries you need to install to execute the code:
 * Torchvision 0.17
 * Matplotlib 3.9
 
-## Install
-
 To install in an environment using conda:
 
 ```
 conda env create -f environment.yml
 conda activate noise2vst
 ```
+## Demo
+
+We provide a Python Jupyter Notebook with example code to reproduce the experiments of the paper: [`demo.ipynb`](demo.ipynb).
 
 ## Pre-trained models
 
@@ -36,10 +37,6 @@ We use two popular off-the-shelf neural networks specialized in the removal of *
 * **DRUNet** [K. Zhang et al., IEEE Trans PAMI 2022]
 
 Their pre-trained weights can be downloaded using the file [`download.py`](pretrained_weights/download.py).
-
-## Demo
-
-We provide a Python Jupyter Notebook with example code to reproduce the experiments of the paper: [`demo.ipynb`](demo.ipynb).
 
 ## Noise2VST
 
