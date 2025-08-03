@@ -7,12 +7,13 @@ name = "Noise2VST"
 version = "0.1.0"
 description = "Noise2VST denoising microscopy images"
 authors = [
-  { name = "Sébastien Herbret" }
+  { name = "Sébastien Herbreteau" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
   "torch",
+  "torchvision",
 ]
 classifiers = [
   "Programming Language :: Python :: 3",
