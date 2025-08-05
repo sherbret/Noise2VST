@@ -3,9 +3,9 @@ Sébastien Herbreteau and Michael Unser
 
 ## News
 
-- :fire: Accepted at ICCV'25 
+- 🔥 Accepted at ICCV'25 
 
-- :fire: The Napari plugin is out! 👉 Check it out [here](https://github.com/IbrahimaAlain/napari-noise2vst). Thanks to Ibrahima Alain Gueye (intern ENSAI)! 
+- 🔥 The Napari plugin is out! 👉 Check it out [here](https://github.com/IbrahimaAlain/napari-noise2vst). Thanks to Ibrahima Alain Gueye (intern ENSAI)! 
 
 ## Napari plugin
 
