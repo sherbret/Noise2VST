@@ -54,6 +54,16 @@ with torch.no_grad():
     img_den = noise2VST(img_noisy, m_drunet_color)
 ```
 
+## Caveat: Limitations
+
+The noise assumptions underlying Noise2VST align with those commonly adopted in the literature. These assumptions are relatively broad and have been shown to be sufficient for a wide range of applications — in particular, fluorescence microscopy. Specifically, the noise is assumed to be:
+
+- **zero-mean**,
+
+- and **spatially independent**.
+
+⚠️ The performance of Noise2VST is not guaranteed when the noise significantly deviates from these assumptions.
+
 ## Acknowledgements
 
 We acknowledge access to the facilities and expertise of the CIBM Center for Biomedical Imaging, a Swiss research center of excellence founded and supported by Lausanne University Hospital (CHUV), University of Lausanne (UNIL), École polytechnique fédérale de Lausanne (EPFL), University of Geneva (UNIGE), and Geneva University Hospitals (HUG).
