@@ -11,6 +11,8 @@ Sébastien Herbreteau and Michael Unser
 
 Thanks to Ibrahima Alain Gueye (intern ENSAI) for developing the plugin for Napari. 👉 Check it out [here](https://github.com/IbrahimaAlain/napari-noise2vst).
 
+![Screenshot Napari](napari_screenshot.png)
+
 ## Requirements
 
 Here is the list of libraries you need to install to execute the code:
