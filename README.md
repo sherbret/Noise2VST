@@ -58,13 +58,17 @@ with torch.no_grad():
 
 ## Caveat: Limitations
 
-The noise assumptions underlying Noise2VST align with those commonly adopted in the literature. These assumptions are relatively broad and have been shown to be sufficient for a wide range of applications — in particular, fluorescence microscopy. Specifically, the noise is assumed to be:
+### Noise assumptions
 
-- **zero-mean**,
-
-- and **spatially independent**.
+The noise assumptions underlying Noise2VST align with those commonly adopted in the literature. These assumptions are relatively broad and have been shown to be sufficient for a wide range of applications — in particular, fluorescence microscopy. Specifically, the noise is assumed to be **zero-mean** and **spatially independent**.
 
 ⚠️ The performance of Noise2VST is not guaranteed when the noise significantly deviates from these assumptions.
+
+### Multi-Frame Processing 
+
+Noise2VST can process multiple noisy images simultaneously via a single VST; however, all input images must share the same noise distribution. 
+
+⚠️ Mixing images with different noise characteristics in a single batch may lead to incorrect processing results.
 
 ## Acknowledgements
 
