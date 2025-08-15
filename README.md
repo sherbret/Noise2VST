@@ -64,7 +64,7 @@ The noise assumptions underlying Noise2VST align with those commonly adopted in 
 
 ⚠️ The performance of Noise2VST is not guaranteed when the noise significantly deviates from these assumptions.
 
-#### Multi-Frame Processing 
+#### Multi-frame processing 
 
 Noise2VST can process multiple noisy images simultaneously via a single VST; however, all input images must share the same noise distribution. 
 
