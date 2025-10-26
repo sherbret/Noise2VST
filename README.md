@@ -70,6 +70,9 @@ Noise2VST can process multiple noisy images simultaneously via a single VST; how
 
 ⚠️ Mixing images with different noise characteristics in a single batch may lead to incorrect processing results.
 
+## Youtube video 
+https://youtu.be/miYPnaWn53M?si=RCbL__dmyFHFmNF0
+
 ## Acknowledgements
 
 We acknowledge access to the facilities and expertise of the CIBM Center for Biomedical Imaging, a Swiss research center of excellence founded and supported by Lausanne University Hospital (CHUV), University of Lausanne (UNIL), École polytechnique fédérale de Lausanne (EPFL), University of Geneva (UNIGE), and Geneva University Hospitals (HUG).
