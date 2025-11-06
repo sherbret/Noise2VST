@@ -251,11 +251,8 @@ class Noise2VST(nn.Module):
         z = (z - z_min) / lam
 
         N, C, H, W = z.shape
-
-        parameters = [{"params":  self.spline1.parameters()}]
-        if not self.inverse:
-            parameters += [{"params":  self.spline2.parameters()}]
-        optimizer = optim.Adam(parameters, lr=lr)
+        
+        optimizer = optim.Adam(self.parameters(), lr=lr)
         scheduler = StepLR(optimizer, nb_iterations//3, gamma=0.1)
 
         conv = Donut3x3(C).to(z.device)
