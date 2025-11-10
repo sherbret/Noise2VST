@@ -70,8 +70,9 @@ Noise2VST can process multiple noisy images simultaneously via a single VST; how
 
 ⚠️ Mixing images with different noise characteristics in a single batch may lead to incorrect processing results.
 
-## Youtube video 
-https://youtu.be/miYPnaWn53M?si=RCbL__dmyFHFmNF0
+## YouTube video 
+
+A brief overview of our paper: https://youtu.be/miYPnaWn53M?si=RCbL__dmyFHFmNF0.
 
 ## Acknowledgements
 
